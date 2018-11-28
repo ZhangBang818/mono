@@ -382,6 +382,7 @@ if ($build)
 		{
 			print(">>> Installing autoconf from $autoconfDir\n");
 			chdir("$autoconfDir") eq 1 or die ("failed to chdir to autoconf directory\n");
+			system("ls -al") eq 0 or die ("failed to list all files\n");
 			system("./configure --prefix=$builtToolsDir") eq 0 or die ("failed to configure autoconf\n");
 			system("make") eq 0 or die ("failed to make autoconf\n");
 			system("make install") eq 0 or die ("failed to make install autoconf\n");
