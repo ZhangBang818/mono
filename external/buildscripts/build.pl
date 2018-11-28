@@ -357,10 +357,10 @@ if ($build)
 		my $automakeDir = "$externalBuildDeps/automake-1-15/automake-$automakeVersion";
 		my $libtoolDir = "$externalBuildDeps/libtool-2-4-6/libtool-$libtoolVersion";
 		
-		my $autoconfStevedoreDir = "$externalBuildDeps/autoconf-src";
-		my $texinfoStevedoreDir = "$externalBuildDeps/texinfo-src";
-		my $automakeStevedoreDir = "$externalBuildDeps/automake-src";
-		my $libtoolStevedoreDir = "$externalBuildDeps/libtool-src";
+		my $autoconfStevedoreDir = "$externalBuildDeps/autoconf-src/autoconf-$autoconfVersion";
+		my $texinfoStevedoreDir = "$externalBuildDeps/texinfo-src/texinfo-$texinfoVersion";
+		my $automakeStevedoreDir = "$externalBuildDeps/automake-$automakeVersion";
+		my $libtoolStevedoreDir = "$externalBuildDeps/libtool-$libtoolVersion";
 		
 		my $builtToolsDir = "$externalBuildDeps/built-tools";
 		
@@ -382,7 +382,7 @@ if ($build)
 		{
 			print(">>> Installing autoconf from $autoconfDir\n");
 			chdir("$autoconfDir") eq 1 or die ("failed to chdir to autoconf directory\n");
-			system("chmod", "-R", "755", $autoconfDir);
+			#system("chmod", "-R", "755", $autoconfDir);
 			system("ls -al") eq 0 or die ("failed to list all files\n");
 			system("./configure --prefix=$builtToolsDir") eq 0 or die ("failed to configure autoconf\n");
 			system("make") eq 0 or die ("failed to make autoconf\n");
@@ -406,7 +406,7 @@ if ($build)
 		{
 			print(">>> Installing texinfo from $texinfoDir\n");
 			chdir($texinfoDir) eq 1 or die ("failed to chdir to texinfo directory\n");
-			system("chmod", "-R", "755", $texinfoDir);
+			#system("chmod", "-R", "755", $texinfoDir);
 			system("./configure --prefix=$builtToolsDir") eq 0 or die ("failed to configure texinfo\n");
 			system("make") eq 0 or die ("failed to make texinfo\n");
 			system("make install") eq 0 or die ("failed to make install texinfo\n");
@@ -436,7 +436,7 @@ if ($build)
 				system("./bootstrap.sh") eq 0 or die ("failed to bootstrap automake\n");
 				$automakeMakeFlags = "-i";
 			}
-			system("chmod", "-R", "755", $automakeDir);
+			#system("chmod", "-R", "755", $automakeDir);
 			system("./configure --prefix=$builtToolsDir") eq 0 or die ("failed to configure automake\n");
 			system("make $automakeMakeFlags") eq 0 or die ("failed to make automake\n");
 			system("make install");
@@ -459,7 +459,7 @@ if ($build)
 		{
 			print(">>> Installing libtool from $libtoolDir\n");
 			chdir("$libtoolDir") eq 1 or die ("failed to chdir to libtool directory\n");
-			system("chmod", "-R", "755", $libtoolDir);
+			#system("chmod", "-R", "755", $libtoolDir);
 			system("./configure --prefix=$builtToolsDir") eq 0 or die ("failed to configure libtool\n");
 			system("make") eq 0 or die ("failed to make libtool\n");
 			system("make install") eq 0 or die ("failed to make install libtool\n");
