@@ -359,8 +359,8 @@ if ($build)
 		
 		my $autoconfStevedoreDir = "$externalBuildDeps/autoconf-src/autoconf-$autoconfVersion";
 		my $texinfoStevedoreDir = "$externalBuildDeps/texinfo-src/texinfo-$texinfoVersion";
-		my $automakeStevedoreDir = "$externalBuildDeps/automake-$automakeVersion";
-		my $libtoolStevedoreDir = "$externalBuildDeps/libtool-$libtoolVersion";
+		my $automakeStevedoreDir = "$externalBuildDeps/automake-src/automake-$automakeVersion";
+		my $libtoolStevedoreDir = "$externalBuildDeps/libtool-src/libtool-$libtoolVersion";
 		
 		my $builtToolsDir = "$externalBuildDeps/built-tools";
 		
