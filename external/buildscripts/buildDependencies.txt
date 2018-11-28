@@ -39,25 +39,25 @@ id : linux-sdk-20170609/9df1e3b3b120_9a3a0847d5b3767579e908b5a9ce050936617b1b927
 repo: testing
 files : linux-sdk-20170609
 
-name : libtool-2-4-6 
-id : libtool-2-4-6/9df1e3b3b120_50f88211570edd89e1bf344d33e416a2eb04519f54940ae72d954a5ee0b8a69c.7z
+name : libtool-src 
+id : libtool-src/2.4.6_3a08a08df8e7ce50a0fc4a1f7f8ffc1dcfe9860bf8f35913f7d63edc02feeedf.7z
 repo: testing
-files : libtool-2-4-6
+files : libtool-src
 
-name : texinfo-4-8 
-id : texinfo-4-8/9df1e3b3b120_f0f8445fc0e8b8d6f52b8be4c3ff09fa59c30ff4424fe8c9bea951b9893540c9.7z
+name : texinfo-src 
+id : texinfo-src/4.8_aaa98a190deb15602c3125ea8f05d8fd20f66a2479a6a41d0c0a58812ae0cb5e.7z
 repo: testing
-files : texinfo-4-8
+files : texinfo-src
 
-name : automake-1-15 
-id : automake-1-15/9df1e3b3b120_815e3ebf8d8bd08aa7f6ac1bbdff50d0379febba2049a5520247f7f4a1a6b3a3.7z
+name : automake-src
+id : automake-src/1.15_59b3847ed5fa8d8bc25cf76050a1a8fb89a8c49f755552dfc1b547d91cb47327.7z
 repo: testing
-files : automake-1-15
+files : automake-src
 
-name : autoconf-2-69 
-id : autoconf-2-69/9df1e3b3b120_08915db7451aeafc86abedc46ef88243a1179ebaef4829ac75e5de8bfc80d0d2.7z
+name : autoconf-src 
+id : autoconf-src/2.69_081e35b71066e7d5c7258188c8b2dd3b38ecdccbf07d73e80ae3b0e69c1263a6.7z
 repo: testing
-files : autoconf-2-69
+files : autoconf-src
 
 name : android-ndk-r16b-darwin 
 id : android-ndk-r16b-darwin/9df1e3b3b120_c7cda5a221dd72799b7e618597b3f8766df7183d386becb2785631c2d3ac0d75.7z
