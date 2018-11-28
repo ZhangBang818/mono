@@ -40,22 +40,22 @@ repo: testing
 files : linux-sdk-20170609
 
 name : libtool-src 
-id : libtool-src/2.4.6_3a08a08df8e7ce50a0fc4a1f7f8ffc1dcfe9860bf8f35913f7d63edc02feeedf.7z
+id : libtool-src/2.4.6_49a0ed204b3b24572e044400cd05513f611bcca6ced0d0816a57ac3b17376257.7z
 repo: testing
 files : libtool-src
 
 name : texinfo-src 
-id : texinfo-src/4.8_aaa98a190deb15602c3125ea8f05d8fd20f66a2479a6a41d0c0a58812ae0cb5e.7z
+id : texinfo-src/4.8_975b9657ebef8a4fe3897047ca450b757a0a956b05399dc813f63e84829bac6a.7z
 repo: testing
 files : texinfo-src
 
 name : automake-src
-id : automake-src/1.15_59b3847ed5fa8d8bc25cf76050a1a8fb89a8c49f755552dfc1b547d91cb47327.7z
+id : automake-src/1.15_de1f60706336df404881d3c789d8e04f0bc50e6bf577d78cae438b089b02d8ed.7z
 repo: testing
 files : automake-src
 
 name : autoconf-src 
-id : autoconf-src/2.69_081e35b71066e7d5c7258188c8b2dd3b38ecdccbf07d73e80ae3b0e69c1263a6.7z
+id : autoconf-src/2.69_0e4ba7a0363c68ad08a7d138b228596aecdaea68e1d8b8eefc645e6ac8fc85c7.7z
 repo: testing
 files : autoconf-src
 
