@@ -173,7 +173,8 @@ if ($buildDeps ne "" && not $forceDefaultBuildDeps)
 }
 else
 {
-	$externalBuildDeps = "$monoroot/../../mono-build-deps/build";
+	#$externalBuildDeps = "$monoroot/../../mono-build-deps/build";
+	$externalBuildDeps = "$monoroot/external/buildscripts/artifacts/Stevedore";
 }
 
 # Only clean up the path if the directory exists, if it doesn't exist,
